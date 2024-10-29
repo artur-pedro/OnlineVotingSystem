@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Votação Online - Login</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="../script/validation.js" defer></script>
+</head>
+<body>
+    <div class="full-height-container">
+        <div class="form-wrapper">
+            <h1 class="text-center mb-4 text-success">Sistema de Votação Online</h1>
+            <hr>
+            <br>
+            <h3 class="text-center mb-4">Login</h3>
+            <form action="api/login.php" method="POST" class="needs-validation" novalidate id="loginForm">
+                <div class="mb-3">
+                    <div class="invalid-feedback">Por favor, insira seu número ou email.</div>
+                    <label for="number" class="label">Insira seu número de telefone ou email</label>
+                    <input id="number" name="mobile" class="form-control" placeholder="Digite o número de telefone ou email" required>
+                </div>
+                
+                <div class="mb-3">
+                    <div class="invalid-feedback">Por favor, insira a senha.</div>
+                    <label for="password" class="label">Insira sua senha</label>
+                    <input id="password" type="password" name="password" class="form-control" placeholder="Digite a senha" required>
+                </div>
+                <button type="submit" class="btn btn-success w-100">Login</button>
+                <br><br>
+                <div class="text-center mt-3">
+                    Usuário novo? <a href="routes/register.html">Registre aqui</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

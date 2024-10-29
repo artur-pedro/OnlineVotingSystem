@@ -1,0 +1,52 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Gradiente de fundo diferente do dashboard */
+.full-height-container {
+    min-height: 100vh;
+    display: flex;
+    background: linear-gradient(135deg, #2a5298, #1e3c72); /* Gradiente azul */
+    padding: 2rem;
+    gap: 1rem;
+}
+
+/* Estilo do Formulário */
+.form-wrapper {
+    max-width: 500px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo com leve transparência */
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Botão */
+.btn-primary {
+    background: linear-gradient(135deg, #2a5298, #1e3c72);
+    border: none;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #2a5298, #1e3c72);
+}
+
+/* Link de Voltar */
+a {
+    color: #6a1b9a;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .full-height-container {
+        padding: 1rem;
+    }
+}

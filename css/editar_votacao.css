@@ -1,0 +1,81 @@
+/* editar_votacao.css */
+
+/* Estilos gerais do corpo */
+body {
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradiente suave de roxo a azul */
+    font-family: Arial, sans-serif; /* Fonte padrão */
+}
+
+/* Container principal */
+.container {
+    background-color: #fff; /* Fundo branco para o conteúdo */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+    padding: 20px; /* Espaçamento interno */
+    margin-top: 20px; /* Espaçamento acima do container */
+}
+
+/* Títulos */
+h1, h2 {
+    color: #343a40; /* Cor escura para os títulos */
+    margin-bottom: 20px; /* Espaçamento abaixo dos títulos */
+}
+
+/* Formulários */
+.form-label {
+    font-weight: bold; /* Negrito para os rótulos do formulário */
+}
+
+.form-control {
+    border: 1px solid #ced4da; /* Borda padrão */
+    border-radius: 4px; /* Bordas arredondadas */
+}
+
+/* Botões */
+.btn {
+    border-radius: 4px; /* Bordas arredondadas para os botões */
+}
+
+/* Tabela */
+.table {
+    margin-top: 20px; /* Espaçamento acima da tabela */
+}
+
+.table th {
+    background-color: #007bff; /* Cor de fundo azul para cabeçalhos */
+    color: white; /* Texto branco */
+}
+
+.table td {
+    vertical-align: middle; /* Centralizar verticalmente o conteúdo da célula */
+}
+/* Estilos do contêiner do hyperlink */
+.link-container {
+    display: block; /* Faz o link se comportar como um bloco */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #f8f9fa; /* Cor de fundo do retângulo */
+    border: 1px solid #ced4da; /* Borda do retângulo */
+    border-radius: 8px; /* Bordas arredondadas */
+    text-align: left; /* Alinha o texto à esquerda */
+    color: #007bff; /* Cor do texto do link */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+/* Estilos ao passar o mouse sobre o hyperlink */
+.link-container:hover {
+    background-color: #e2e6ea; /* Muda a cor de fundo ao passar o mouse */
+    color: #0056b3; /* Muda a cor do texto ao passar o mouse */
+}
+
+textarea {
+    width: 100%; /* Garante que a textarea use toda a largura disponível */
+    height: 100px; /* Altura fixa para garantir que não seja muito alta */
+    border-radius: 5px; /* Bordas arredondadas */
+    border: 1px solid #ced4da; /* Cor da borda */
+    margin: 0; /* Remove qualquer margem */
+    padding: 5px; /* Adiciona um leve preenchimento para o texto não grudar nas bordas */
+    resize: none; /* Impede redimensionamento, se desejado */
+    text-align: left; /* Garante que o texto comece à esquerda */
+}
+
+

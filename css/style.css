@@ -1,0 +1,158 @@
+/* Reset básico e estilo global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+}
+
+.bg-light {
+    background-color: #f3f4f6;
+}
+
+/* Contêiner principal */
+.full-height-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, #2a5298, #1e3c72);
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Formulário */
+.form-wrapper {
+    max-width: 600px;
+    width: 100%;
+    padding: 2rem;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Estilos do cabeçalho */
+.form-wrapper h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.form-wrapper hr {
+    border: none;
+    height: 2px;
+    background-color: linear-gradient(135deg, #2a5298, #1e3c72);
+    margin: 10px 0;
+}
+
+/* Estilos do formulário */
+form {
+    margin-top: 20px;
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.btn {
+    background-color: #234581;
+    border: 1px solid black;
+}
+.btn:hover {
+    opacity: 0.8;
+    background-color: #234581;
+}
+.text-center {
+    color: #234581;;
+}
+/* Botão */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #234581;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Links */
+a {
+    color: #234581;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+/* Estilo para a classe 'was-validated' */
+.was-validated .form-control:valid {
+    border-color: #234581; /* Verde para campos válidos */
+}
+
+.was-validated .form-control:invalid {
+    border-color: #dc3545; /* Vermelho para campos inválidos */
+}
+
+.was-validated .form-control:invalid:focus {
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25); /* Sombra para campos inválidos em foco */
+}
+
+/* Estilo para as mensagens de feedback */
+.invalid-feedback {
+    display: none; /* Oculta mensagens de feedback por padrão */
+}
+
+.was-validated .invalid-feedback {
+    display: block; /* Mostra mensagens de feedback se o formulário foi validado */
+}
+
+/* Estilo para mostrar mensagens de feedback em campos inválidos */
+.was-validated .form-control:invalid ~ .invalid-feedback {
+    display: block; /* Mostra mensagem de feedback correspondente a campos inválidos */
+}
+.label {
+    display: block; /* Mostra os rótulos por padrão */
+}
+
+.was-validated .label {
+    display: none; /* Oculta os rótulos após a validação */
+}
+.is-invalid {
+    border: 1px solid red; /* Bordas vermelhas para campos inválidos */
+}
+
+.is-valid {
+    border: 1px solid #234581; /* Bordas verdes para campos válidos, se necessário */
+}
+#title-registration {
+    color: #234581;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .form-wrapper h1 {
+        font-size: 1.8rem;
+    }
+}
