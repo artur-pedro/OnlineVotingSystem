@@ -1,1 +1,1 @@
-Sistema para cadastro e realização de votações. 
+Sistema para cadastro e remoção de votações, permite o cadastro/login de diferentes usuários.
